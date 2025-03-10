@@ -24,7 +24,8 @@ backgroundLayer4.src = "backgroundLayers/layer-4.png";
 const backgroundLayer5 = new Image();
 backgroundLayer5.src = "backgroundLayers/layer-5.png";
 
-const slider=document.getElementById('slider');
+window.addEventListener('load',function (){
+    const slider=document.getElementById('slider');
 slider.value=gameSpeed;
 const showGameSpeed=document.getElementById('showGameSpeed');
 showGameSpeed.innerHTML=gameSpeed
@@ -74,3 +75,4 @@ function animate() {
     requestAnimationFrame(animate);
 }
 animate();
+})
